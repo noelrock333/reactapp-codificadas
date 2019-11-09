@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home'
+import ProgressBar from './components/ProgressBar'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home></Home>
+      <ProgressBar percentage={30}></ProgressBar>
+      <ProgressBar percentage={50}></ProgressBar>
+      <ProgressBar percentage={99}></ProgressBar>
+      <ProgressBar percentage={10}></ProgressBar>
     </div>
   );
 }
